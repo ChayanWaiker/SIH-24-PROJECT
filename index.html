@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./india-flag-icon.png">     
+    <title>Mera Samvidhaan</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+
+<body>
+
+    
+  <section class="hlo">
+    <div class="header-container">
+              <h1 class="logo">
+         <a href="https://lawmin.gov.in/" title="Home" rel="home"role="link">
+                <img src="./emblem.svg" alt="national emblem">
+          <div class="lang"><strong lang="hi">विधि और न्याय मंत्रालय</strong><span> Ministry of Law &amp; Justice</span></div>
+         </a>
+              </h1>
+          <div>
+              <a title="Swachh Bharat, External Link that opens in a new window" href="https://swachhbharat.mygov.in/" target="_blank" role="link"><img class="img " id="logo" src="./swach-bharat.png" alt="Swachh Bharat"></a>
+          </div>
+      </div>
+  </section>
+
+    <section>
+    <nav id="nav">
+        <div id="one">Institutions & Constitution</div>
+        <ul id="nav_list">
+            <li><a href="./index.html">| &nbsp;&nbsp;HOME &nbsp;&nbsp;|</a></li>
+
+            <li class="drop  ">&nbsp; GAMES &nbsp;  |
+            <div class="dropdown-content">
+                <a href="./games.html">SPIN THE WHEEL</a>
+                <a href="./quiz.html">QUIZ</a>
+              </div>
+            </li>
+
+            <li class="drop"> &nbsp; LOG IN / REGISTER &nbsp;|
+                <div class="dropdown-content">
+                    <a href="">LOG IN</a>
+                    <a href="">REGISTER</a>
+                  </div>
+            </li>
+        </ul>
+        <form>
+            <input type="search" placeholder="Search Article" aria-label="Search" class="btn_srch">
+            <button type="submit" class="btn">Search</button>
+        </form>
+    </nav>
+    </section>
+
+    <br>
+
+    <section>
+
+        <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                        <img src="img1.jpg" style="width:100%">
+                    </div>
+            
+                    <div class="mySlides fade">
+                        <img src="img2.jpg" style="width:100%">>
+                    </div>
+            
+                    <div class="mySlides fade">
+                        <img src="img3.jpg" style="width:100%">
+                    </div>
+            
+        </div> 
+    </section>
+
+    <section class="main">
+        
+           <div class="box">
+                <form id="formchat">
+                   <label for="Doubt"><h1 class="share">Share your problem !</h1></label><br>
+                   <input type="text" name="Doubt" id="inp1" placeholder="Type Here ...."><br><br><br>
+                   <input type="submit" value="Submit" id="sub1">
+                 </form>
+                
+            </div>
+    </section>
+
+
+
+    <section id="yol">
+        <div class="yol_container">
+              <div class="faq siz">
+                 <div class="tran"><h1>Frequently asked question</h1><hr></div>
+                 <ul>
+                    <li>Which Articles are helpful for women experiencing Domestic Violence?</li><br>
+                    <li>Articles Helpful for Child.</li><br>
+                    <li>What topics are related in RTI ?</li><br>
+                    <li>Rules and Regulation related to RTO .</li><br>
+                    <li>Laws related to online scams and frauds.</li><br>
+                    <li>Laws protecting labourers.</li><br>
+                    <li>How to face against false accusatiions ?</li><br>
+                    <li>What actions to take against elite members exploiting regular citizens?</li><br>
+                 </ul>
+               </div>
+
+               <div class="siz">
+                  <div class="tran"><h1>Highlights</h1><hr></div>
+                  <ul>
+                    <li>CNLU: 2nd National PIL Drafting Competition 2024</li><br>
+                    <li>'Article 370 has no place in Constitution of India': says Amit Shah</li><br>
+                    <li>Jindal Global University to Establish India’s First Constitution Museum to Commemorate 75th Anniversary of Indian Constitution</li><br>
+                    <li>'Taken out of context': Telangana CM Revanth Reddy apologises for remark on Kavitha bail order</li><br>
+                    <li>Demand for pocket version of Constitution surges in aftermath of Lok Sabha battle</li><br>
+                  </ul>
+                  <h5>More Upcoming...</h5>
+               </div>
+        </div>
+    </section>
+
+
+
+    <section>
+        <footer id="footer">
+            <div id="">           
+                <div class="wrapper">
+                   <div class="footer-top-wrapper">
+                      <ul id="ul">
+                      <li><a class="anc" href="./website-policy.html"  role="link">Website Policies</a></li>
+                      <li><a class="anc" href="./about.html"  role="link">About us</a></li>
+                      <li><a class="anc" href="./contact.html"  role="link">Contact Us</a></li>
+                      <li><a class="anc" href="./feedback.html"  role="link">Feedback</a></li>
+                      </ul>
+                   </div>
+       
+                   
+                     <div class="footer-bottom-wrapper">
+                            Website is Owned and  Content Managed by &nbsp;&nbsp;&nbsp; <strong>Team Eclipse</strong>
+                           <br>
+                           <span>Designed, Developed and Hosted by  &nbsp;&nbsp;&nbsp;
+                             <a href="http://www.nic.in/" title="NIC, External Link that opens in a new window" target="_blank" role="link">
+                             <strong>CHAYAN WAIKER</strong>
+                             </a> 
+                           </span> 
+                           <span class="lastupdated">
+                             <br>
+                             Last Updated: &nbsp;&nbsp;<strong>30 Aug 2024</strong>
+                           </span>
+                    </div>
+                   
+                </div>
+            </div>
+        </footer>
+    </section>
+
+
+
+<script>
+    const chatForm = document.getElementById('formchat');
+const userInput = document.getElementById('inp1');
+
+chatForm.addEventListener('submit', async (event) => {
+  event.preventDefault();
+
+  const userText = userInput.value;
+  userInput.value = ''; // Clear input field
+
+  const response = await fetch('/generate', {
+    method: 'POST',
+    body: JSON.stringify({ userInput: userText }),
+    headers: { 'Content-Type': 'application/json' },
+  });
+
+  const data = await response.json();
+
+
+ 
+});
+
+    </script>
+    <script src="index.js" charset="UTF-8"></script>
+</body>
+
+</html>
